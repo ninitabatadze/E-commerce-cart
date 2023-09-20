@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</head>
+
+<body>
+    <section class="sec-1">
+        <nav class="navbar navbar-expand-lg" style="margin-bottom: 100px;">
+            <div class="container">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/Logo.png" alt="logo"></a>
+                <div class="d-lg-none icons d-flex justify-content-center">
+                    <img src="images/Search.png" alt="search">
+                    <img src="images/Person.png" alt="person">
+                    <div style="position: relative;">
+                        <img src="images/Shopping Cart.png" alt="shopping">
+                        <a class="count" id="clickme">0</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-butn">
+                                    <a class="menu-4" href="#">Brands<i class="fa fa-caret-down"></i></a>
+                                </button>
+                                <div class="dropdown1">
+                                    <a href="#">Apple</a>
+                                    <a href="#">Samsung</a>
+                                    <a href="#">Xioami</a>
+                                    <a href="#">Fitbit</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recent Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons d-lg-flex d-none justify-content-center">
+                    <img src="images/Search.png" alt="search">
+                    <img src="images/Person.png" alt="person">
+                    <div style="position: relative;">
+                    <img src="images/Shopping Cart.png" alt="shopping">
+                    <a class="count" id="clickme">0</a>
+                </div>
+             </div>
+            </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h3 class="discover ">
+                        Discover <br> Most Suitable Watches
+                    </h3>
+                    <p class="descreption">Find the best, reliable, and cheap smart watches here. <br>We focus on
+                        product quality. Here you can find smart <br>watches of almost all brands. So why you are
+                        waiting?<br> Just order now!</p>
+                  <div style="position: relative;">
+
+                        <div style="position: relative;" class="d-md-none d-block">
+                            <input class="search" type="text" value="Find the best brands">
+                            <button type="button" class="search1 btn btn-primary">Search</button>
+                            
+                        </div>
+                        <div class="d-md-block d-none">
+                            <input class="search" type="text" value="Find the best brands">
+                            <button type="button" style="width: 112px; height: 45px; margin-left:320px; margin-top:-89px;" class=" btn btn-primary">Search</button>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 d-lg-block d-none">
+                    <img src="images/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row active">
+                <div class="col-lg-4 col-12">
+                    <div class="card" style="width:100%; height: 239px; background-color:rgba(246, 246, 246, 1);
+            margin-top: 20px; display: flex; justify-content: center; border-radius: 22px; border: none;">
+                        <div class="card-body" style="align-items: center; display: flex; margin-left: 20px;">
+                            <div class="col-4">
+                                <img src="images/11.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h3 class="apple">Apple</h3>
+
+                                <p class="text">Apple is one of the <br> most famous smart<br> watches providing<br>
+                                    company.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card"
+                        style="width:100%; height: 239px; background-color:rgba(246, 246, 246, 1);
+                    margin-top: 20px; display: flex; justify-content: center; border-radius: 22px; border: none; gap:10px;">
+                        <div class="card-body" style="align-items: center; display: flex; margin-left: 20px;">
+                            <div class="col-4">
+                                <img src="images/22.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h3 class="apple">Xiaomi</h3>
+
+                                <p class="text">Apple is one of the <br> most famous smart<br> watches providing<br>
+                                    company.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card" style="width:100%; height: 239px; background-color:rgba(246, 246, 246, 1);
+                        margin-top: 20px; display: flex; justify-content: center; border-radius: 22px; border: none;">
+                        <div class="card-body" style="align-items: center; display: flex; margin-left: 20px;">
+                            <div class="col-4">
+                                <img src="images/33.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h3 class="apple">FitBit</h3>
+
+                                <p class="text">Apple is one of the <br> most famous smart<br> watches providing<br>
+                                    company.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="section-1">
+        <div class="wrapper">
+            <div class="col-12">
+                <p class="text-1">Find your favourite smart watch.</p>
+                <h3 class="products">Our Latest Products</h3>
+                <div class="product-container" id="latest-products">
+                </div>
+            </div>
+
+        </div>
+        <div style="justify-content: center; display: flex; margin-top: 3rem;">
+            <a href="index2.html">
+                <button
+                    style="width: 196px; border-radius: 10px; border: none; color: white; height: 46px; background-color: rgba(56, 88, 214, 1);">
+                    View More
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="wrapper">
+            <div class="col-12">
+                <p class="text-1">Here are our some of the best clients.</p>
+                <h3 class="products">What People Say About Us</h3>
+                <div class="product-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3 d-flex justify-content-center g-5">
+        <section class="testimonial">
+            <div class="container">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img class="images" src="images/preview 1.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hamza Faizi</h4>
+                                            <p class="smart">Don’t waste time, just order! This is the best website
+                                                to purchase smart watches.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/44.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hafiz Huzaifa</h4>
+                                            <p class="smart">I’ve been purchasing smart watches of Mohid for a long
+                                                time. All the products are good quality.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+                                        <div class="col-4">
+                                            <img src="images/preview 1.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hamza Faizi</h4>
+                                            <p class="smart">Don’t waste time, just order! This is the best website
+                                                to purchase smart watches.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/44.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hafiz Huzaifa</h4>
+                                            <p class="smart">I’ve been purchasing smart watches of Mohid for a long
+                                                time. All the products are good quality.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/preview 1.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hamza Faizi</h4>
+                                            <p class="smart">Don’t waste time, just order! This is the best website
+                                                to purchase smart watches.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/44.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hafiz Huzaifa</h4>
+                                            <p class="smart">I’ve been purchasing smart watches of Mohid for a long
+                                                time. All the products are good quality.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/preview 1.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hamza Faizi</h4>
+                                            <p class="smart">Don’t waste time, just order! This is the best website
+                                                to purchase smart watches.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/44.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hafiz Huzaifa</h4>
+                                            <p class="smart">I’ve been purchasing smart watches of Mohid for a long
+                                                time. All the products are good quality.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+                                        <div class="col-4">
+                                            <img src="images/preview 1.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hamza Faizi</h4>
+                                            <p class="smart">Don’t waste time, just order! This is the best website
+                                                to purchase smart watches.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 justify-content-lg-normal justify-content-center d-lg-block d-flex">
+                                    <div class="wrapp d-flex align-items-center">
+
+                                        <div class="col-4">
+                                            <img src="images/44.png" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 style="margin-top: -13px;">Hafiz Huzaifa</h4>
+                                            <p class="smart">I’ve been purchasing smart watches of Mohid for a long
+                                                time. All the products are good quality.</p>
+                                            <div class="rating">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                                <img src="images/Vector.png" alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <div class="left container">
+
+        <div class="row"
+            style="background-color: #F6F6F6; justify-content: center; display: flex; border-radius: 22px;">
+
+            <div class="col-md-7 col-12">
+
+                <div class="w-100 newslr">
+
+                    <h1 class="h3-subscribe">Subscribe To Newsletter</h1>
+
+                    <p class="p-get">Get free guide about smart watches daily. </p>
+
+
+                    <div style="position: relative;" class="d-md-none d-block">
+                        <input class="news" type="text" value="Enter Email Address">
+                        <button type="button" class="search1 btn btn-primary">Subscribe</button>
+                        </button>
+                    </div>
+                    <div class="d-md-block d-none">
+                        <input class="sub" type="text" value="Enter Email Address">
+                        <button type="button" class="btn btn-primary"
+                            style="width: 112px; height: 45px; margin-left:320px; margin-top:-92px;">Subscribe</button>
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-md-5  d-lg-block d-none">
+
+                <div class="w-100 pt-5">
+
+                    <img src="images/watch.png" lass="w-75 ">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section-3">
+        <div class="col-12">
+            <div class="footer">
+                Copyright @ 2022 | Mohid
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
